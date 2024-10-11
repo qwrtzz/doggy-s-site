@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Собачки</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Собачки</h1>
+        <p>Добро пожаловать на сайт, посвященный нашим четвероногим друзьям!</p>
+        
+        <h2>Породы собак</h2>
+        <ul class="breed-list">
+            <li data-breed="Лабрадор">
+                <img src="scale_1200.jpeg" alt="Лабрадор">
+                <span>Лабрадор</span>
+            </li>
+            <li data-breed="Бульдог">
+                <img src="04b6243f22f58d0950518aadb1661a0f.jpg" alt="Бульдог">
+                <span>Бульдог</span>
+            </li>
+            <li data-breed="Пудель">
+                <img src="scale_21200.jpeg" alt="Пудель">
+                <span>Пудель</span>
+            </li>
+            <li data-breed="Хаски">
+                <img src="9f28e686acecb6edc27fb500cb12ba82.jpg" alt="Хаски">
+                <span>Хаски</span>
+            </li>
+            <li data-breed="Такса">
+                <img src="0ff68dc790f6ec64f77364b5adb4288e.jpg" alt="Такса">
+                <span>Такса</span>
+            </li>
+        </ul>
+
+        <!-- Новый раздел для отображения информации о породе -->
+        <div id="breedInfo" class="hidden">
+            <h3 id="breedName"></h3>
+            <p id="breedDescription"></p>
+            <button id="closeBreedInfo">Закрыть</button>
+        </div>
+
+        <button id="factButton">Узнать факт о собаках</button>
+        <p id="fact" class="hidden"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
